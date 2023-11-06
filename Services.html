@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="Services.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="topnav">
+    <img src="logo1.png"  alt="logo" width="180" height="50" class="logo">
+  <a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Home.html#About%20Us"> Home </a>
+ <a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/about%20us.html"> About Us </a>
+  <a class="active" href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Services.html">Services </a>
+  <a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Routess.html"> Routes</a>
+  <a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Contact%20us.html"> Contact </a>
+</div>
+
+<section>
+  <div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-8">
+
+  <img src="van.jpg" alt="title" style="width:900px" class="imgs">
+  
+  <h1 class="stitle">Moveit: Transportation Services You Need</h1><br>
+  <h4>​Getting You Where You Need To Go</h4>
+
+  <p class="pdes">​At Moveit, our goal is to provide professional and affordable transportation services across the local JUW area. Our fully managed, trustworthy service allows you to spend more time on what’s important to you. Just leave the rest to us. We know JUW inside and out insuring you can sit back, relax, and rely on us to get you where you need to go.</p>
+<a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Contact%20us.html"><button class="button">contact us</button>
+  <br><br><br>
+  <h2>Our Services</h2>
+  <p class="pdes">Moveit is your JUW Bus Service. What makes us so great at what we do is that we do what we say we’ll do. With a top notch fleet and a skilled team wearing friendly faces and a determined attitude, we’re all about great service and quality work. Check below for a full list of services we provide.</p>
+</div></div>
+</section>
+<br><br>
+
+<section>
+  
+  <div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-4">
+      
+      <img src="hiace3.png"  alt="hiace3" width="400" height="250">
+      <h5 class="h5style">​Expert Services</h5>
+      
+    </div>
+    <div class="col-sm-4" >
+      <img src="coaster.jpeg"  alt="coaster" width="400" height="250">
+      <h5 class="h5style">Available for Any Ocassion</h5></div>
+      
+    <div class="col-sm-4" >
+      <img src="suzuki.jpeg"  alt="suzuki" width="400" height="250">
+        <h5 class="h5style">Special attention is paid to punctuality</h5> 
+        
+    </div>
+</section>
+<br>
+<section>
+  <h2>Testimonials and Reviews</h2>
+
+  <div class="slideshow-container">
+
+<div class="mySlides">
+  <q style="color: white;">Van Services arecalways on time. I'm never late and they never do a single off.</q>
+
+</div>
+
+<div class="mySlides">
+  <q style="color: white;">Customer appreciation, create a sense of safety for staff and students.. Ensure of safe and timely transportation. Great benefits.. Family oriented environment.</q>
+  
+</div>
+
+<div class="mySlides">
+  <q style="color: white;">Thier Van facility is amazing! safe environment.  Very much satisfied!</q>
+  
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</section>
+
+
+<section>
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 8:00am - 3:30pm<br>
+          Fri: 8:00am - 2:30pm<br>
+          Saturday and sunday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          5C، Block 5 Nazimabad<br>
+          Karachi City, Sindh 74600
+          <p>* Door to Door Service with safe environmnet.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"Customer appreciation, create a sense of safety for staff and students!"</p>
+          <p>" Ensure of safe and timely transportation. Great benefits.. Family oriented environment!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Move it JUW Transport 2020</div>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>
+

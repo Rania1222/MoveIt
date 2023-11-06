@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="Home.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="topnav">
+  <img src="logo1.png"  alt="logo" width="180" height="50" class="logo">
+
+ <a class="active" href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Home.html#About%20Us">Home </a>
+  <a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/about%20us.html">About Us </a>
+  <a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Services.html"> Service </a>
+  <a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Routess.html"> Routes</a>
+  <a href="file:///C:/Users/Ali/Downloads/Web%20Project/Web%20Project/Contact%20us.html"> Contact </a>
+</div>
+<br><br>
+  <div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext"> 1 / 6 </div>
+<img src="van1.jpeg" style="width: 100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext"> 2 / 6 </div>
+<img src="coaster.jpeg" style="width: 100%">
+</div>
+<div class="mySlides fade">
+<div class="numbertext"> 3 / 6 </div>
+<img src="hiace2.jpeg" style="width: 100%">
+</div>
+<div class="mySlides fade">
+<div class="numbertext"> 4 / 6</div>
+
+<img src="coaster2.jpeg" style="width: 100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext"> 5 / 6</div>
+<img src="hiace.jpeg" style="width: 100%">
+</div>
+<div class="mySlides fade">
+<div class="numbertext">
+6 / 6
+</div>
+<img src="suzuki2.jpeg" style="width: 100%">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align: center;">
+
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+</div>
+</div>
+<br>
+<br>
+<div class="description">
+<h2 align="center"> JUW SERVICES </h2>
+
+      <center> <q style="color: white;">Customer appreciation, create a sense of safety for staff and students.. Ensure of safe and timely transportation. Great benefits.. Family oriented environment.</q></center>
+<center><img src="service.jpeg" width="700" height="280"></center>
+
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div><footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 8:00am - 3:30pm<br>
+          Fri: 8:00am - 2:30pm<br>
+          Saturday and sunday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          5C، Block 5 Nazimabad<br>
+          Karachi City, Sindh 74600
+          <p>* Door to Door Service with safe environmnet.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"Customer appreciation, create a sense of safety for staff and students!"</p>
+          <p>" Ensure of safe and timely transportation. Great benefits.. Family oriented environment!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Move it JUW Transport 2020</div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
+
